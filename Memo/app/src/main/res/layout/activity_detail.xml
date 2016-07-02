@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="hal.ac.jp.kadai04_ih13a_20.detailActivity"
+    android:padding="5dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:padding="5dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Medium Text"
+            android:id="@+id/date"
+            android:gravity="right"/>
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/scrollView2"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true">
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/inputText"
+                android:enabled="false"
+                android:focusable="false"
+                android:textColor="#000000"/>
+        </ScrollView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/update"
+            android:textColor="#fff"
+            android:id="@+id/updateBtn"
+            android:background="@drawable/update_btn"
+            android:layout_marginRight="3dp"
+            android:layout_weight="1"
+            android:textSize="18dp"/>
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/delete"
+            android:background="@drawable/delete_btn"
+            android:textColor="#fff"
+            android:id="@+id/deleteBtn"
+            android:layout_marginLeft="3dp"
+            android:layout_weight="1"
+            android:textSize="18dp"/>
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/finish"
+            android:background="@drawable/finish_btn"
+            android:textColor="#fff"
+            android:id="@+id/finishBtn"
+            android:visibility="gone"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+</LinearLayout>

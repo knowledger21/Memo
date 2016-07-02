@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">メモ帳</string>
+    <string name="regist">登録</string>
+    <string name="finish">完了</string>
+    <string name="update">編集</string>
+    <string name="delete">削除</string>
+    <string name="search">検索</string>
+</resources>
